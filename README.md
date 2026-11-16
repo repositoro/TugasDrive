@@ -1,10 +1,9 @@
-# 📚 TugasKu — Panduan Setup Lengkap
+# TugasKu — Panduan Setup Lengkap
 
-Owner = 71 Project 
-
+build by = repositoro
 ---
 
-## 🗂️ Struktur File
+## Struktur File
 
 ```
 tugasku/
@@ -12,7 +11,7 @@ tugasku/
 ├── auth.php           ← Callback login Google
 ├── logout.php         ← Halaman logout
 ├── api.php            ← Backend AJAX (add/delete/upload tugas)
-├── config.php         ← ⚙️ KONFIGURASI (isi Client ID & Secret di sini)
+├── config.php         ← KONFIGURASI (isi Client ID & Secret di sini)
 ├── includes/
 │   ├── google.php     ← Helper Google OAuth & Drive API
 │   └── tasks.php      ← Helper manajemen data tugas
@@ -22,7 +21,7 @@ tugasku/
 
 ---
 
-## 🚀 Cara Setup (Step by Step)
+## Cara Setup (Step by Step)
 
 ### LANGKAH 1 — Buat Google Cloud Project (GRATIS)
 
@@ -94,7 +93,7 @@ define('GOOGLE_REDIRECT_URI',  'http://localhost/tugasku/auth.php');
 
 Juga sesuaikan **timezone** kamu (sudah diset ke WITA/Makassar):
 ```php
-date_default_timezone_set('Asia/Makassar'); // WITA ✅
+date_default_timezone_set('Asia/Makassar'); // WITA 
 // date_default_timezone_set('Asia/Jakarta'); // WIB
 // date_default_timezone_set('Asia/Jayapura'); // WIT
 ```
@@ -123,11 +122,11 @@ date_default_timezone_set('Asia/Makassar'); // WITA ✅
 2. Klik **"Masuk dengan Google"**
 3. Login dengan akun Google yang sudah ditambahkan sebagai Test User (Langkah 3)
 4. Izinkan akses ke Google Drive → kamu akan diarahkan ke dashboard
-5. ✅ Siap digunakan!
+5. Siap digunakan!
 
 ---
 
-## 🔥 Cara Pakai
+## Cara Pakai
 
 ### Tambah Tugas Baru
 - Klik tombol **"+ Tambah Tugas"**
@@ -135,19 +134,19 @@ date_default_timezone_set('Asia/Makassar'); // WITA ✅
 - Klik **"Tambah Tugas"**
 
 ### Kumpulkan Tugas
-- Klik tombol **"📤 Kumpulkan"** pada tugas yang ingin dikumpulkan
+- Klik tombol **"Kumpulkan"** pada tugas yang ingin dikumpulkan
 - Pilih atau drag & drop file tugas kamu
-- Klik **"🚀 Upload ke Drive"**
+- Klik **"Upload ke Drive"**
 - File akan otomatis tersimpan di Google Drive kamu dalam folder **"TugasKu - Pengumpulan Tugas"**
 
 ### Streak & Motivasi
-- Setiap tugas yang dikumpulkan **sebelum deadline** = streak +1 🔥
+- Setiap tugas yang dikumpulkan **sebelum deadline** = streak +1 
 - Jika terlambat = streak kembali ke 0
 - Semakin panjang streak, semakin terasa "sayang untuk diputus"!
 
 ---
 
-## ❓ Troubleshooting
+## Troubleshooting
 
 ### "Error 400: redirect_uri_mismatch"
 → URI di Google Console tidak sama persis dengan yang di `config.php`.
@@ -170,7 +169,7 @@ ini_set('display_errors', 1);
 
 ---
 
-## 🔒 Keamanan & Privasi
+## Keamanan & Privasi
 
 - File tugas tersimpan di **Google Drive milikmu sendiri**, bukan server orang lain
 - Data tugas (judul, deadline, dll) disimpan lokal di file `data/tasks.json`
