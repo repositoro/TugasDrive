@@ -1,4 +1,4 @@
-# TugasKu — Panduan Setup Lengkap
+# tugasku — panduan setup
 
 build by = repositoro
 ---
